@@ -21,10 +21,25 @@ The main focus areas include reusable React components, Tailwind CSS styling, an
 ## 🖼️ Screenshots
 ![Home](./src/screenshorts/one.png)
 ![Home](./src/screenshorts/two.png)
-
-
 ![Home](./src/screenshorts/five.png)
 ![Home](./src/screenshorts/six.png)
-
 ![Home](./src/screenshorts/four.png)
 ![Home](./src/screenshorts/three.png)
+
+---
+
+## ⚙️ Technologies Used
+- **React.js** – Component-based frontend library  
+- **Tailwind CSS** – For modern, responsive styling  
+- **JavaScript (ES6+)** – Logic and interactivity  
+- **Vite** – Fast and optimized build tool  
+- **Git & GitHub** – Version control and collaboration  
+- **Vercel** – Deployment platform  
+
+---
+
+## 🧠 Setup & Run Instructions
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/mohanreddytm/softdef-assignment.git
