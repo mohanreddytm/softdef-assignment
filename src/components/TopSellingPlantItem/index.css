@@ -1,0 +1,112 @@
+.plant-item-initial-cont{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    width: 30%;
+    margin-bottom: 140px;
+    position: relative;
+    border-radius: 50px;
+    /* border: 2px solid rgb(255, 255, 255, 0.2); */
+    padding: 260px 30px 30px 30px;
+}
+
+.plant-item-initial-cont::before{
+    content: '';
+    height: 100%;
+    width:100%;
+    background: conic-gradient(
+    from 230deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    rgba(255, 255, 255, 0.05) 100%
+    );
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50px;
+    z-index: -1;
+    padding: 2px;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    padding: 2px;
+    z-index: -1;   
+}
+
+.plant-item-initial-cont img{
+    max-width: 90%;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    right: 50%;
+    translate: -50% -50%;
+}
+
+.plant-item-inner-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+}
+
+.plant-item-inner-cont h1{
+    margin: 0px 0px 5px 0px !important;
+    font-size: clamp(16px, 3vw, 28px) !important;
+    font-weight: 400;
+    padding: 0px !important;
+    color: rgb(255, 255, 255, 0.75) !important ;
+}
+
+.plant-item-inner-cont p{
+    font-size: clamp(11px, 2vw, 18px);
+    font-weight: 400;
+    color: rgb(255, 255, 255, 0.75);
+}
+
+.plant-item-inner-cont div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    /* background-color: pink; */
+    width: 90% !important;
+}
+
+.selling-plants-cont div svg{
+    color: #fff;
+    font-size: 30px;
+    border: 2px solid #fff;
+    padding: 6px 9px 6px 9px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+/* .plant-item-image-cont{
+    flex-grow: 1;
+    background-color: pink;
+} */
+
+@media screen and (min-width: 767px) and (max-width: 1000px){
+    .plant-item-initial-cont{
+        padding-top: 28%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .plant-item-initial-cont{
+        width: 40%;
+        flex-grow: 1;
+        padding-top: 35%;
+        margin-bottom: 60px;
+    }
+    .plant-item-initial-cont img{
+        max-width: 90% !important;
+        top: 60px;
+        /* background-color: pink; */
+    }
+}

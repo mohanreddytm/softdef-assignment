@@ -1,0 +1,21 @@
+.selling-plants-cont{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px;
+}
+
+.selling-plants-cont h1{
+    color:#fff;
+    font-size: clamp(24px, 5vw, 45px);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 100px;
+    text-shadow: 0 0 30px rgba(0,0,0, 0.7);
+}
+
+.selling-plants-cont div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:20px
+}

@@ -1,0 +1,208 @@
+.our-best-initial-cont{
+    display: flex;
+    flex-direction:
+    column ;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+
+
+
+.our-best-main-head{
+    font-size: clamp(24px, 5vw, 45px);
+    text-shadow: 0 10px 8px rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+}
+
+.our-best-main-cont{
+    display: flex;
+    /* border: 2px solid rgb(255, 255, 255, 0.2);    */
+    border-radius: 60px;
+    padding: 100px 20px;
+    margin: 160px 40px 100px 40px;
+    background-color: rgb(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    /* width: 100%; */
+    height: 100%;
+}
+
+.our-best-main-cont::before{
+    content: '';
+    height: 100%;
+    width:100%;
+    background: conic-gradient(
+    from 230deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    rgba(255, 255, 255, 0.05) 100%
+    );
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 60px;
+    z-index: -1;
+    padding: 2px;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    padding: 2px;
+    z-index: -1;
+}
+
+.our-best-plant-image-cont{
+    flex-grow: 1;
+    position: relative;
+}
+
+.our-best-plant-image{
+    width: 114%;
+    position: absolute;
+    top: -190px;
+    left: -80px;
+}
+
+.our-best-main-cont-inner{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.our-best-main-cont-inner h1{
+    font-size: clamp(18px, 3.5vw, 30px);
+    font-weight: 600;
+    color: rgb(255, 255, 255, 0.75);
+
+}
+
+.our-best-main-cont-inner p{
+    font-size: clamp(11px, 2.5vw, 20px);
+    color: rgb(255, 255, 255, 0.75);
+
+    width: 90%;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.our-best-main-cont-inner-button-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.our-best-main-cont-inner-button-cont button{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255, 0.75);
+    color: rgb(255, 255, 255, 0.75);
+    padding: 6px 40px;
+    border-radius: 6px;
+    font-size: clamp(12px, 2.5vw, 22px);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.our-best-main-cont-inner-button-cont div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.our-best-main-cont-inner-button-cont div p{
+    margin: 0px 0px 0px 10px;
+    padding: 0px;
+    font-size: clamp(8px, 1.5vw, 12px);
+    font-weight: 500;
+}
+
+.our-best-main-cont-inner-button-cont div p span{
+    font-size: clamp(10px, 2vw, 16px);
+    /* font-weight: 600; */
+}
+
+.our-best-main-cont-inner-button-cont div svg:first-child{
+    font-size: 20px;
+    color: rgb(255, 255, 255, 0.40);
+}
+
+.our-best-main-cont-inner-button-cont div svg:last-child{
+    font-size: 20px;
+    color: rgb(255, 255, 255, 1);
+}
+
+.our-best-carousal-effect{
+    display: flex;
+    align-items: center;
+
+    align-self: center;
+    gap: 10px;
+}
+
+.our-best-carousal-effect p{
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.our-best-carousal-effect p:first-child{
+    width: 25px;
+    border-radius: 10px;
+}
+
+.our-best-plant-image-for-mobile{
+    display: none;
+}
+
+@media screen and (min-width:1200px){
+    .our-best-plant-image{
+        height: 600px !important;
+        left: -6%;
+        width: auto ;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1000px) {
+    .our-best-plant-image{
+        width: 100% !important;
+        left: -10%;
+        top: -10%;
+        width: auto ;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .our-best-main-cont{
+        padding: 50% 60px 40px 40px;
+        display: relative;
+    }
+    .our-best-main-cont-inner{
+        width: 100%;
+        align-self: flex-end;
+        margin: 0px;
+        /* background-color: pink; */
+    }
+    .our-best-plant-image-for-mobile{
+        display: inline;
+        position: absolute;
+        top: -20%;
+        z-index: 10000;
+        width: 80%;
+    }
+    .our-best-main-cont-inner p{
+        width: 100%;
+    }
+    
+    .our-best-main-cont-inner-button-cont{
+        width: 100%;
+    }
+}

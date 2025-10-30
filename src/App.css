@@ -1,0 +1,16 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* font-family: "Inter", sans-serif; */
+}
+
+.app-bottom-level{
+  background-color: #1B2316;
+
+}
+
+*{
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
