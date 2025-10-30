@@ -9,7 +9,7 @@ The main focus areas include reusable React components, Tailwind CSS styling, an
 ---
 
 ## 🚀 Live Demo
-👉 [View Deployed App](https://softdef-assignment-ten.vercel.app/)
+👉 [View Deployed App](https://softdef-assignment-alpha.vercel.app/)
 
 ---
 
