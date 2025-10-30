@@ -34,7 +34,11 @@ const reviews = [{
 const CustomerReview = () => {
   return (
     <div className='customer-review-initial-cont'>
-        <h1 className='customer-review-main-head'>Customer Review</h1>
+        <div className='trendy-plants-main-title-cont'>
+        <h1 className='trendy-plants-main-title'>Customer Review</h1>
+
+            {/* <h1 className="trendy-plants-main-title">Our Top Selling Plants</h1> */}
+        </div>
         <ul className='customer-reviews-cont'>
             {reviews.map(each =>
                 <li>

@@ -51,7 +51,9 @@ const plants = [{
 const TopSellingPlants = () => {
   return (
     <div className='selling-plants-cont'>
-        <h1>Our Top Selling Plants</h1>
+        <div className='trendy-plants-main-title-cont'>
+            <h1 className="trendy-plants-main-title">Our Top Selling Plants</h1>
+        </div>
         <div>
             {plants.map(each => <TopSellingPlantItem key={each.id} item={each} />)}
         </div>

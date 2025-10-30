@@ -64,7 +64,9 @@
 }
 
 
-
+.customer-review-initial-cont .trendy-plants-main-title-cont{
+    align-self: center;
+}
 .customer-review-profile-cont{
     display: flex;
     align-items: center;

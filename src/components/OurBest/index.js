@@ -7,7 +7,10 @@ import plant1 from '../../assets/plant1.png';
 const OurBest = () => {
     return (
         <div className='our-best-initial-cont'>
-            <h1 className='our-best-main-head'>Our Best o2</h1>
+            <div className='our-best-initial-title-cont'>
+                <h1 className='trendy-plants-main-title'>Our Best o2</h1>
+
+            </div>
             <div className='our-best-main-cont'>
             <img src={plant1} alt="plant" className='our-best-plant-image-for-mobile' />
                 <div className='our-best-plant-image-cont'><img src={plant1} alt="plant" className='our-best-plant-image' /></div>

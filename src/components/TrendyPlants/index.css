@@ -55,13 +55,78 @@
     width: 50%;
 }
 
+.trendy-plants-main-title-cont{
+    position: relative;
+    z-index: 1;
+    padding: 10px 14px;
+    margin: 100px 0px;
+
+}
+
+.trendy-plants-main-title-cont::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    translate: -50% -50%;
+    border-radius: 16px;
+    background: conic-gradient(
+      from 75deg,
+      rgba(219, 235, 0, 0.8) 0%,
+      rgba(253, 253, 250, 0.9) 3%,
+
+      transparent 7%
+    );
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    filter: blur(0.6px);
+    z-index: -1;
+    padding: 4px;
+  }
+
+  .trendy-plants-main-title-cont::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    translate: -50% -50%;
+    border-radius: 10px;
+    background: conic-gradient(
+      from 255deg,
+      rgba(219, 235, 0, 0.8) 0%,
+      rgba(253, 253, 250, 0.9) 3%,
+
+      transparent 7%
+    );
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    filter: blur(0.6px);
+    z-index: -1;
+    padding: 4px;
+
+  }
+  
+
 .trendy-plants-main-title{
     font-size: clamp(22px, 5vw, 40px);
     color: #fff;
+    background-color: transparent !important;
     margin: 0px;
     font-weight: 600;
-    margin-bottom: 60px;
+    padding: 0px;
+    /* margin-bottom: 60px; */
 }
+
+
+
 
 .trendy-planet-item-title{
     font-size: clamp(18px, 3.5vw, 30px);

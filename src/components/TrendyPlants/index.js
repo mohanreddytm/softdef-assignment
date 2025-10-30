@@ -9,8 +9,9 @@ import plant3 from './../../assets/plant3.png';
 const TrenduPlants = () => {
   return (
     <div className='trendy-plants-initial-cont'>
-
-        <h1 className="trendy-plants-main-title">Our Trendy Plants</h1>
+        <div className="trendy-plants-main-title-cont">
+            <h1 className="trendy-plants-main-title">Our Trendy Plants</h1>
+        </div>
         <div className="trendy-plants-item-conts">
             <div className="trendy-plants-image-cont">
                 <img src={plant2} alt="plant" className="plant-2-trendy"/>
